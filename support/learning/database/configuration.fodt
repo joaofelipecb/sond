@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><meta:creation-date>2024-01-10T13:29:49.456535526</meta:creation-date><dc:date>2024-01-10T13:31:07.954185753</dc:date><meta:editing-duration>PT1M19S</meta:editing-duration><meta:editing-cycles>1</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="16" meta:paragraph-count="687" meta:word-count="3820" meta:character-count="28600" meta:non-whitespace-character-count="23573"/><meta:generator>LibreOffice/7.5.9.2$Linux_X86_64 LibreOffice_project/50$Build-2</meta:generator></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">472294</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">22849</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">10696</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">11929</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">479376</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">472294</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">22848</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">482988</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">214</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="KeepRatio" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="LegacySingleLineFontwork" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ConnectorUseSnapRect" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AutoFirstLineIndentDisregardLineSpace" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="HeaderSpacingBelowLastPara" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ProtectBookmarks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ContinuousEndnotes" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DisableOffPagePositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SubtractFlysAnchoredAtFlys" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TabOverSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FrameAutowidthWithMorePara" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">1764326</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1764326</config:config-item>
+   <config:config-item config:name="FootnoteInColumnToPageEnd" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ProtectFields" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaLineSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="HyphenateURLs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ImagePreferredDPI" config:type="int">0</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DropCapPunctuation" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="MsWordCompMinLineHeightByFly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmptyDbFieldHidesPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="NoNumberingShowFollowBy" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="GutterAtTop" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Liberation Serif" svg:font-family="&apos;Liberation Serif&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
+  <style:font-face style:name="Lohit Devanagari" svg:font-family="&apos;Lohit Devanagari&apos;"/>
+  <style:font-face style:name="Lohit Devanagari1" svg:font-family="&apos;Lohit Devanagari&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Noto Sans CJK SC" svg:font-family="&apos;Noto Sans CJK SC&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Noto Serif CJK SC" svg:font-family="&apos;Noto Serif CJK SC&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" loext:color-lum-mod="100%" loext:color-lum-off="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="Noto Serif CJK SC" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Lohit Devanagari1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="0.4925in" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="Noto Serif CJK SC" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Lohit Devanagari1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2" loext:hyphenation-no-caps="false" loext:hyphenation-no-last-word="false" loext:hyphenation-word-char-count="5" loext:hyphenation-zone="no-limit"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0835in" style:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="14pt" style:font-name-asian="Noto Sans CJK SC" style:font-family-asian="&apos;Noto Sans CJK SC&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="Lohit Devanagari1" style:font-family-complex="&apos;Lohit Devanagari&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.0972in" style:contextual-spacing="false" fo:line-height="115%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-size-asian="12pt" style:font-name-complex="Lohit Devanagari" style:font-family-complex="&apos;Lohit Devanagari&apos;"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.0835in" fo:margin-bottom="0.0835in" style:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="Lohit Devanagari" style:font-family-complex="&apos;Lohit Devanagari&apos;" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-size-asian="12pt" style:font-name-complex="Lohit Devanagari" style:font-family-complex="&apos;Lohit Devanagari&apos;"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.1965in" style:num-format="1" text:number-position="left" text:increment="5"/>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="001aebe6" officeooo:paragraph-rsid="001aebe6"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="8.2681in" fo:page-height="11.6929in" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" style:writing-mode="lr-tb" style:footnote-max-height="0in" loext:margin-gutter="0in">
+    <style:footnote-sep style:width="0.0071in" style:distance-before-sep="0.0398in" style:distance-after-sep="0.0398in" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P1">PostgreSQL Configuration</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">pg_hba.conf</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">local <text:s text:c="3"/>all <text:s text:c="12"/>postgres <text:s text:c="33"/>scram-sha-256</text:p>
+   <text:p text:style-name="P1">hostssl <text:s/>all <text:s text:c="12"/>application <text:s/>0.0.0.0/0 <text:s text:c="19"/>scram-sha-256</text:p>
+   <text:p text:style-name="P1">hostssl <text:s/>all <text:s text:c="12"/>application <text:s/>::1/128 <text:s text:c="21"/>scram-sha-256</text:p>
+   <text:p text:style-name="P1">hostssl <text:s/>all <text:s text:c="12"/>postgres <text:s text:c="4"/>::1/128 <text:s text:c="21"/>scram-sha-256</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">postgresql.conf</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># -----------------------------</text:p>
+   <text:p text:style-name="P1"># PostgreSQL configuration file</text:p>
+   <text:p text:style-name="P1"># -----------------------------</text:p>
+   <text:p text:style-name="P1">#</text:p>
+   <text:p text:style-name="P1"># This file consists of lines of the form:</text:p>
+   <text:p text:style-name="P1">#</text:p>
+   <text:p text:style-name="P1"># <text:s text:c="2"/>name = value</text:p>
+   <text:p text:style-name="P1">#</text:p>
+   <text:p text:style-name="P1"># (The &quot;=&quot; is optional.) <text:s/>Whitespace may be used. <text:s/>Comments are introduced with</text:p>
+   <text:p text:style-name="P1"># &quot;#&quot; anywhere on a line. <text:s/>The complete list of parameter names and allowed</text:p>
+   <text:p text:style-name="P1"># values can be found in the PostgreSQL documentation.</text:p>
+   <text:p text:style-name="P1">#</text:p>
+   <text:p text:style-name="P1"># The commented-out settings shown in this file represent the default values.</text:p>
+   <text:p text:style-name="P1"># Re-commenting a setting is NOT sufficient to revert it to the default value;</text:p>
+   <text:p text:style-name="P1"># you need to reload the server.</text:p>
+   <text:p text:style-name="P1">#</text:p>
+   <text:p text:style-name="P1"># This file is read on server startup and when the server receives a SIGHUP</text:p>
+   <text:p text:style-name="P1"># signal. <text:s/>If you edit the file on a running system, you have to SIGHUP the</text:p>
+   <text:p text:style-name="P1"># server for the changes to take effect, run &quot;pg_ctl reload&quot;, or execute</text:p>
+   <text:p text:style-name="P1"># &quot;SELECT pg_reload_conf()&quot;. <text:s/>Some parameters, which are marked below,</text:p>
+   <text:p text:style-name="P1"># require a server shutdown and restart to take effect.</text:p>
+   <text:p text:style-name="P1">#</text:p>
+   <text:p text:style-name="P1"># Any parameter can also be given as a command-line option to the server, e.g.,</text:p>
+   <text:p text:style-name="P1"># &quot;postgres -c log_connections=on&quot;. <text:s/>Some parameters can be changed at run time</text:p>
+   <text:p text:style-name="P1"># with the &quot;SET&quot; SQL command.</text:p>
+   <text:p text:style-name="P1">#</text:p>
+   <text:p text:style-name="P1"># Memory units: <text:s/>B <text:s/>= bytes <text:s text:c="11"/>Time units: <text:s/>us <text:s/>= microseconds</text:p>
+   <text:p text:style-name="P1"># <text:s text:c="15"/>kB = kilobytes <text:s text:c="20"/>ms <text:s/>= milliseconds</text:p>
+   <text:p text:style-name="P1"># <text:s text:c="15"/>MB = megabytes <text:s text:c="20"/>s <text:s text:c="2"/>= seconds</text:p>
+   <text:p text:style-name="P1"># <text:s text:c="15"/>GB = gigabytes <text:s text:c="20"/>min = minutes</text:p>
+   <text:p text:style-name="P1"># <text:s text:c="15"/>TB = terabytes <text:s text:c="20"/>h <text:s text:c="2"/>= hours</text:p>
+   <text:p text:style-name="P1"># <text:s text:c="50"/>d <text:s text:c="2"/>= days</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># FILE LOCATIONS</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># The default values of these variables are driven from the -D command-line</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/># option or PGDATA environment variable, represented here as ConfigDir.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#data_directory = &apos;ConfigDir&apos;<text:tab/><text:tab/># use data in another directory</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#hba_file = &apos;ConfigDir/pg_hba.conf&apos;<text:tab/># host-based authentication file</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#ident_file = &apos;ConfigDir/pg_ident.conf&apos;<text:tab/># ident configuration file</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># If external_pid_file is not explicitly set, no extra PID file is written.</text:p>
+   <text:p text:style-name="P1">#external_pid_file = &apos;&apos;<text:tab/><text:tab/><text:tab/># write an extra PID file</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># CONNECTIONS AND AUTHENTICATION</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Connection Settings -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">listen_addresses = &apos;*&apos;<text:tab/><text:tab/># what IP address(es) to listen on;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># comma-separated list of addresses;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># defaults to &apos;localhost&apos;; use &apos;*&apos; for all</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">port = &apos;5678&apos;</text:p>
+   <text:p text:style-name="P1">#max_connections = 100<text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#superuser_reserved_connections = 3<text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#unix_socket_directories = &apos;/tmp&apos;<text:tab/># comma-separated list of directories</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#unix_socket_group = &apos;&apos;<text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#unix_socket_permissions = 0777<text:tab/><text:tab/># begin with 0 to use octal notation</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#bonjour = off<text:tab/><text:tab/><text:tab/><text:tab/># advertise server via Bonjour</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#bonjour_name = &apos;&apos;<text:tab/><text:tab/><text:tab/># defaults to the computer name</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - TCP settings -</text:p>
+   <text:p text:style-name="P1"># see &quot;man tcp&quot; for details</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#tcp_keepalives_idle = 0<text:tab/><text:tab/># TCP_KEEPIDLE, in seconds;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 0 selects the system default</text:p>
+   <text:p text:style-name="P1">#tcp_keepalives_interval = 0<text:tab/><text:tab/># TCP_KEEPINTVL, in seconds;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 0 selects the system default</text:p>
+   <text:p text:style-name="P1">#tcp_keepalives_count = 0<text:tab/><text:tab/># TCP_KEEPCNT;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 0 selects the system default</text:p>
+   <text:p text:style-name="P1">#tcp_user_timeout = 0<text:tab/><text:tab/><text:tab/># TCP_USER_TIMEOUT, in milliseconds;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 0 selects the system default</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#client_connection_check_interval = 0<text:tab/># time between checks for client</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># disconnection while running queries;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 0 for never</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P1"># - Authentication -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">authentication_timeout = 10s<text:tab/><text:tab/># 1s-600s</text:p>
+   <text:p text:style-name="P1">#password_encryption = scram-sha-256<text:tab/># scram-sha-256 or md5</text:p>
+   <text:p text:style-name="P1">#db_user_namespace = off</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># GSSAPI using Kerberos</text:p>
+   <text:p text:style-name="P1">#krb_server_keyfile = &apos;FILE:${sysconfdir}/krb5.keytab&apos;</text:p>
+   <text:p text:style-name="P1">#krb_caseins_users = off</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - SSL -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">ssl = on</text:p>
+   <text:p text:style-name="P1">ssl_ca_file = &apos;root.crt&apos;</text:p>
+   <text:p text:style-name="P1">ssl_cert_file = &apos;server.crt&apos;</text:p>
+   <text:p text:style-name="P1">ssl_crl_file = &apos;&apos;</text:p>
+   <text:p text:style-name="P1">#ssl_crl_dir = &apos;&apos;</text:p>
+   <text:p text:style-name="P1">ssl_key_file = &apos;server.key&apos;</text:p>
+   <text:p text:style-name="P1">ssl_ciphers = &apos;HIGH:MEDIUM:+3DES:!aNULL&apos; # allowed SSL ciphers</text:p>
+   <text:p text:style-name="P1">ssl_prefer_server_ciphers = on</text:p>
+   <text:p text:style-name="P1">#ssl_ecdh_curve = &apos;prime256v1&apos;</text:p>
+   <text:p text:style-name="P1">#ssl_min_protocol_version = &apos;TLSv1.2&apos;</text:p>
+   <text:p text:style-name="P1">#ssl_max_protocol_version = &apos;&apos;</text:p>
+   <text:p text:style-name="P1">#ssl_dh_params_file = &apos;&apos;</text:p>
+   <text:p text:style-name="P1">#ssl_passphrase_command = &apos;&apos;</text:p>
+   <text:p text:style-name="P1">#ssl_passphrase_command_supports_reload = off</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># RESOURCE USAGE (except WAL)</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Memory -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#shared_buffers = 128MB<text:tab/><text:tab/><text:tab/># min 128kB</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#huge_pages = try<text:tab/><text:tab/><text:tab/># on, off, or try</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#huge_page_size = 0<text:tab/><text:tab/><text:tab/># zero for system default</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#temp_buffers = 8MB<text:tab/><text:tab/><text:tab/># min 800kB</text:p>
+   <text:p text:style-name="P1">#max_prepared_transactions = 0<text:tab/><text:tab/># zero disables the feature</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"># Caution: it is not advisable to set max_prepared_transactions nonzero unless</text:p>
+   <text:p text:style-name="P1"># you actively intend to use prepared transactions.</text:p>
+   <text:p text:style-name="P1">#work_mem = 4MB<text:tab/><text:tab/><text:tab/><text:tab/># min 64kB</text:p>
+   <text:p text:style-name="P1">#hash_mem_multiplier = 2.0<text:tab/><text:tab/># 1-1000.0 multiplier on hash table work_mem</text:p>
+   <text:p text:style-name="P1">#maintenance_work_mem = 64MB<text:tab/><text:tab/># min 1MB</text:p>
+   <text:p text:style-name="P1">#autovacuum_work_mem = -1<text:tab/><text:tab/># min 1MB, or -1 to use maintenance_work_mem</text:p>
+   <text:p text:style-name="P1">#logical_decoding_work_mem = 64MB<text:tab/># min 64kB</text:p>
+   <text:p text:style-name="P1">#max_stack_depth = 2MB<text:tab/><text:tab/><text:tab/># min 100kB</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/>#shared_memory_type = mmap<text:tab/><text:tab/># the default is the first option</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># supported by the operating system:</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>mmap</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>sysv</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>windows</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#dynamic_shared_memory_type = posix<text:tab/># the default is usually the first option</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># supported by the operating system:</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>posix</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>sysv</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>windows</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>mmap</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#min_dynamic_shared_memory = 0MB<text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Disk -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#temp_file_limit = -1<text:tab/><text:tab/><text:tab/># limits per-process temp file space</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># in kilobytes, or -1 for no limit</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Kernel Resources -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#max_files_per_process = 1000<text:tab/><text:tab/># min 64</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Cost-Based Vacuum Delay -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#vacuum_cost_delay = 0<text:tab/><text:tab/><text:tab/># 0-100 milliseconds (0 disables)</text:p>
+   <text:p text:style-name="P1">#vacuum_cost_page_hit = 1<text:tab/><text:tab/># 0-10000 credits</text:p>
+   <text:p text:style-name="P1">#vacuum_cost_page_miss = 2<text:tab/><text:tab/># 0-10000 credits</text:p>
+   <text:p text:style-name="P1">#vacuum_cost_page_dirty = 20<text:tab/><text:tab/># 0-10000 credits</text:p>
+   <text:p text:style-name="P1">#vacuum_cost_limit = 200<text:tab/><text:tab/># 1-10000 credits</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Background Writer -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#bgwriter_delay = 200ms<text:tab/><text:tab/><text:tab/># 10-10000ms between rounds</text:p>
+   <text:p text:style-name="P1">#bgwriter_lru_maxpages = 100<text:tab/><text:tab/># max buffers written/round, 0 disables</text:p>
+   <text:p text:style-name="P1">#bgwriter_lru_multiplier = 2.0<text:tab/><text:tab/># 0-10.0 multiplier on buffers scanned/round</text:p>
+   <text:p text:style-name="P1">#bgwriter_flush_after = 0<text:tab/><text:tab/># measured in pages, 0 disables</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Asynchronous Behavior -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#backend_flush_after = 0<text:tab/><text:tab/># measured in pages, 0 disables</text:p>
+   <text:p text:style-name="P1">#effective_io_concurrency = 1<text:tab/><text:tab/># 1-1000; 0 disables prefetching</text:p>
+   <text:p text:style-name="P1">#maintenance_io_concurrency = 10<text:tab/># 1-1000; 0 disables prefetching</text:p>
+   <text:p text:style-name="P1">#max_worker_processes = 8<text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#max_parallel_workers_per_gather = 2<text:tab/># taken from max_parallel_workers</text:p>
+   <text:p text:style-name="P1">#max_parallel_maintenance_workers = 2<text:tab/># taken from max_parallel_workers</text:p>
+   <text:p text:style-name="P1">#max_parallel_workers = 8<text:tab/><text:tab/># maximum number of max_worker_processes that</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># can be used in parallel operations</text:p>
+   <text:p text:style-name="P1">#parallel_leader_participation = on</text:p>
+   <text:p text:style-name="P1">#old_snapshot_threshold = -1<text:tab/><text:tab/># 1min-60d; -1 disables; 0 is immediate</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># WRITE-AHEAD LOG</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Settings -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">wal_level = &apos;replica&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">fsync = &apos;on&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (turning this off can cause</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># unrecoverable data corruption)</text:p>
+   <text:p text:style-name="P1">#synchronous_commit = on<text:tab/><text:tab/># synchronization level;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># off, local, remote_write, remote_apply, or on</text:p>
+   <text:p text:style-name="P1">#wal_sync_method = fsync<text:tab/><text:tab/># the default is the first option</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># supported by the operating system:</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>open_datasync</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>fdatasync (default on Linux and FreeBSD)</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>fsync</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>fsync_writethrough</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>open_sync</text:p>
+   <text:p text:style-name="P1">#full_page_writes = on<text:tab/><text:tab/><text:tab/># recover from partial page writes</text:p>
+   <text:p text:style-name="P1">#wal_log_hints = off<text:tab/><text:tab/><text:tab/># also do full page writes of non-critical updates</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#wal_compression = off<text:tab/><text:tab/><text:tab/># enables compression of full-page writes;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># off, pglz, lz4, zstd, or on</text:p>
+   <text:p text:style-name="P1">#wal_init_zero = on<text:tab/><text:tab/><text:tab/># zero-fill new WAL files</text:p>
+   <text:p text:style-name="P1">#wal_recycle = on<text:tab/><text:tab/><text:tab/># recycle WAL files</text:p>
+   <text:p text:style-name="P1">#wal_buffers = -1<text:tab/><text:tab/><text:tab/># min 32kB, -1 sets based on shared_buffers</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#wal_writer_delay = 200ms<text:tab/><text:tab/># 1-10000 milliseconds</text:p>
+   <text:p text:style-name="P1">#wal_writer_flush_after = 1MB<text:tab/><text:tab/># measured in pages, 0 disables</text:p>
+   <text:p text:style-name="P1">#wal_skip_threshold = 2MB</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#commit_delay = 0<text:tab/><text:tab/><text:tab/># range 0-100000, in microseconds</text:p>
+   <text:p text:style-name="P1">#commit_siblings = 5<text:tab/><text:tab/><text:tab/># range 1-1000</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Checkpoints -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#checkpoint_timeout = 5min<text:tab/><text:tab/># range 30s-1d</text:p>
+   <text:p text:style-name="P1">#checkpoint_completion_target = 0.9<text:tab/># checkpoint target duration, 0.0 - 1.0</text:p>
+   <text:p text:style-name="P1">#checkpoint_flush_after = 0<text:tab/><text:tab/># measured in pages, 0 disables</text:p>
+   <text:p text:style-name="P1">#checkpoint_warning = 30s<text:tab/><text:tab/># 0 disables</text:p>
+   <text:p text:style-name="P1">max_wal_size = &apos;400MB&apos;</text:p>
+   <text:p text:style-name="P1">#min_wal_size = 80MB</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Prefetching during recovery -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#recovery_prefetch = try<text:tab/><text:tab/># prefetch pages referenced in the WAL?</text:p>
+   <text:p text:style-name="P1">#wal_decode_buffer_size = 512kB<text:tab/><text:tab/># lookahead window used for prefetching</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Archiving -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#archive_mode = off<text:tab/><text:tab/># enables archiving; off, on, or always</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#archive_library = &apos;&apos;<text:tab/><text:tab/># library to use to archive a logfile segment</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (empty string indicates archive_command should</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># be used)</text:p>
+   <text:p text:style-name="P1">#archive_command = &apos;&apos;<text:tab/><text:tab/># command to use to archive a logfile segment</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># placeholders: %p = path of file to archive</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="14"/>%f = file name only</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># e.g. &apos;test ! -f /mnt/server/archivedir/%f &amp;&amp; cp %p /mnt/server/archivedir/%f&apos;</text:p>
+   <text:p text:style-name="P1">#archive_timeout = 0<text:tab/><text:tab/># force a logfile segment switch after this</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># number of seconds; 0 disables</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Archive Recovery -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># These are only used in recovery mode.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#restore_command = &apos;&apos;<text:tab/><text:tab/># command to use to restore an archived logfile segment</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># placeholders: %p = path of file to restore</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="14"/>%f = file name only</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># e.g. &apos;cp /mnt/server/archivedir/%f %p&apos;</text:p>
+   <text:p text:style-name="P1">#archive_cleanup_command = &apos;&apos;<text:tab/># command to execute at every restartpoint</text:p>
+   <text:p text:style-name="P1">#recovery_end_command = &apos;&apos;<text:tab/># command to execute at completion of recovery</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Recovery Target -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># Set these only when performing a targeted recovery.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#recovery_target = &apos;&apos;<text:tab/><text:tab/># &apos;immediate&apos; to end recovery as soon as a</text:p>
+   <text:p text:style-name="P1"><text:s text:c="32"/># consistent state is reached</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#recovery_target_name = &apos;&apos;<text:tab/># the named restore point to which recovery will proceed</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#recovery_target_time = &apos;&apos;<text:tab/># the time stamp up to which recovery will proceed</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#recovery_target_xid = &apos;&apos;<text:tab/># the transaction ID up to which recovery will proceed</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#recovery_target_lsn = &apos;&apos;<text:tab/># the WAL LSN up to which recovery will proceed</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#recovery_target_inclusive = on # Specifies whether to stop:</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># just after the specified recovery target (on)</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># just before the recovery target (off)</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#recovery_target_timeline = &apos;latest&apos;<text:tab/># &apos;current&apos;, &apos;latest&apos;, or timeline ID</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#recovery_target_action = &apos;pause&apos;<text:tab/># &apos;pause&apos;, &apos;promote&apos;, &apos;shutdown&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># REPLICATION</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Sending Servers -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># Set these on the primary and on any standby that will send replication data.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">max_wal_senders = &apos;16&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#max_replication_slots = 10<text:tab/># max number of replication slots</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">wal_keep_size = &apos;128MB&apos;</text:p>
+   <text:p text:style-name="P1">#max_slot_wal_keep_size = -1<text:tab/># in megabytes; -1 disables</text:p>
+   <text:p text:style-name="P1">#wal_sender_timeout = 60s<text:tab/># in milliseconds; 0 disables</text:p>
+   <text:p text:style-name="P1">#track_commit_timestamp = off<text:tab/># collect timestamp of transaction commit</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Primary Server -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># These settings are ignored on a standby server.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#synchronous_standby_names = &apos;&apos;<text:tab/># standby servers that provide sync rep</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># method to choose sync standbys, number of sync standbys,</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># and comma-separated list of application_name</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/># from standby(s); &apos;*&apos; = all</text:p>
+   <text:p text:style-name="P1">#vacuum_defer_cleanup_age = 0<text:tab/># number of xacts by which cleanup is delayed</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Standby Servers -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># These settings are ignored on a primary server.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#primary_conninfo = &apos;&apos;<text:tab/><text:tab/><text:tab/># connection string to sending server</text:p>
+   <text:p text:style-name="P1">#primary_slot_name = &apos;&apos;<text:tab/><text:tab/><text:tab/># replication slot on sending server</text:p>
+   <text:p text:style-name="P1">#promote_trigger_file = &apos;&apos;<text:tab/><text:tab/># file name whose presence ends recovery</text:p>
+   <text:p text:style-name="P1">hot_standby = &apos;on&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#max_standby_archive_delay = 30s<text:tab/># max delay before canceling queries</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># when reading WAL from archive;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 allows indefinite delay</text:p>
+   <text:p text:style-name="P1">#max_standby_streaming_delay = 30s<text:tab/># max delay before canceling queries</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># when reading streaming WAL;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 allows indefinite delay</text:p>
+   <text:p text:style-name="P1">#wal_receiver_create_temp_slot = off<text:tab/># create temp slot if primary_slot_name</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># is not set</text:p>
+   <text:p text:style-name="P1">#wal_receiver_status_interval = 10s<text:tab/># send replies at least this often</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 0 disables</text:p>
+   <text:p text:style-name="P1">#hot_standby_feedback = off<text:tab/><text:tab/># send info from standby to prevent</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># query conflicts</text:p>
+   <text:p text:style-name="P1">#wal_receiver_timeout = 60s<text:tab/><text:tab/># time that receiver waits for</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># communication from primary</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># in milliseconds; 0 disables</text:p>
+   <text:p text:style-name="P1">#wal_retrieve_retry_interval = 5s<text:tab/># time to wait before retrying to</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># retrieve WAL after a failed attempt</text:p>
+   <text:p text:style-name="P1">#recovery_min_apply_delay = 0<text:tab/><text:tab/># minimum delay for applying changes during recovery</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Subscribers -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># These settings are ignored on a publisher.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#max_logical_replication_workers = 4<text:tab/># taken from max_worker_processes</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#max_sync_workers_per_subscription = 2<text:tab/># taken from max_logical_replication_workers</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># QUERY TUNING</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Planner Method Configuration -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#enable_async_append = on</text:p>
+   <text:p text:style-name="P1">#enable_bitmapscan = on</text:p>
+   <text:p text:style-name="P1">#enable_gathermerge = on</text:p>
+   <text:p text:style-name="P1">#enable_hashagg = on</text:p>
+   <text:p text:style-name="P1">#enable_hashjoin = on</text:p>
+   <text:p text:style-name="P1">#enable_incremental_sort = on</text:p>
+   <text:p text:style-name="P1">#enable_indexscan = on</text:p>
+   <text:p text:style-name="P1">#enable_indexonlyscan = on</text:p>
+   <text:p text:style-name="P1">#enable_material = on</text:p>
+   <text:p text:style-name="P1">#enable_memoize = on</text:p>
+   <text:p text:style-name="P1">#enable_mergejoin = on</text:p>
+   <text:p text:style-name="P1">#enable_nestloop = on</text:p>
+   <text:p text:style-name="P1">#enable_parallel_append = on</text:p>
+   <text:p text:style-name="P1">#enable_parallel_hash = on</text:p>
+   <text:p text:style-name="P1">#enable_partition_pruning = on</text:p>
+   <text:p text:style-name="P1">#enable_partitionwise_join = off</text:p>
+   <text:p text:style-name="P1">#enable_partitionwise_aggregate = off</text:p>
+   <text:p text:style-name="P1">#enable_seqscan = on</text:p>
+   <text:p text:style-name="P1">#enable_sort = on</text:p>
+   <text:p text:style-name="P1">#enable_tidscan = on</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Planner Cost Constants -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#seq_page_cost = 1.0<text:tab/><text:tab/><text:tab/># measured on an arbitrary scale</text:p>
+   <text:p text:style-name="P1">#random_page_cost = 4.0<text:tab/><text:tab/><text:tab/># same scale as above</text:p>
+   <text:p text:style-name="P1">#cpu_tuple_cost = 0.01<text:tab/><text:tab/><text:tab/># same scale as above</text:p>
+   <text:p text:style-name="P1">#cpu_index_tuple_cost = 0.005<text:tab/><text:tab/># same scale as above</text:p>
+   <text:p text:style-name="P1">#cpu_operator_cost = 0.0025<text:tab/><text:tab/># same scale as above</text:p>
+   <text:p text:style-name="P1">#parallel_setup_cost = 1000.0<text:tab/># same scale as above</text:p>
+   <text:p text:style-name="P1">#parallel_tuple_cost = 0.1<text:tab/><text:tab/># same scale as above</text:p>
+   <text:p text:style-name="P1">#min_parallel_table_scan_size = 8MB</text:p>
+   <text:p text:style-name="P1">#min_parallel_index_scan_size = 512kB</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/>#effective_cache_size = 4GB</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#jit_above_cost = 100000<text:tab/><text:tab/># perform JIT compilation if available</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># and query more expensive than this;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 disables</text:p>
+   <text:p text:style-name="P1">#jit_inline_above_cost = 500000<text:tab/><text:tab/># inline small functions if query is</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># more expensive than this; -1 disables</text:p>
+   <text:p text:style-name="P1">#jit_optimize_above_cost = 500000<text:tab/># use expensive JIT optimizations if</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># query is more expensive than this;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 disables</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Genetic Query Optimizer -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#geqo = on</text:p>
+   <text:p text:style-name="P1">#geqo_threshold = 12</text:p>
+   <text:p text:style-name="P1">#geqo_effort = 5<text:tab/><text:tab/><text:tab/># range 1-10</text:p>
+   <text:p text:style-name="P1">#geqo_pool_size = 0<text:tab/><text:tab/><text:tab/># selects default based on effort</text:p>
+   <text:p text:style-name="P1">#geqo_generations = 0<text:tab/><text:tab/><text:tab/># selects default based on effort</text:p>
+   <text:p text:style-name="P1">#geqo_selection_bias = 2.0<text:tab/><text:tab/># range 1.5-2.0</text:p>
+   <text:p text:style-name="P1">#geqo_seed = 0.0<text:tab/><text:tab/><text:tab/># range 0.0-1.0</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Other Planner Options -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#default_statistics_target = 100<text:tab/># range 1-10000</text:p>
+   <text:p text:style-name="P1">#constraint_exclusion = partition<text:tab/># on, off, or partition</text:p>
+   <text:p text:style-name="P1">#cursor_tuple_fraction = 0.1<text:tab/><text:tab/># range 0.0-1.0</text:p>
+   <text:p text:style-name="P1">#from_collapse_limit = 8</text:p>
+   <text:p text:style-name="P1">#jit = on<text:tab/><text:tab/><text:tab/><text:tab/># allow JIT compilation</text:p>
+   <text:p text:style-name="P1">#join_collapse_limit = 8<text:tab/><text:tab/># 1 disables collapsing of explicit</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># JOIN clauses</text:p>
+   <text:p text:style-name="P1">#plan_cache_mode = auto<text:tab/><text:tab/><text:tab/># auto, force_generic_plan or</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># force_custom_plan</text:p>
+   <text:p text:style-name="P1">#recursive_worktable_factor = 10.0<text:tab/># range 0.001-1000000</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># REPORTING AND LOGGING</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Where to Log -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">log_destination = &apos;stderr&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># stderr, csvlog, jsonlog, syslog, and</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># eventlog, depending on platform.</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># csvlog and jsonlog require</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># logging_collector to be on.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># This is used when logging to stderr:</text:p>
+   <text:p text:style-name="P1">logging_collector = &apos;on&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># and csvlog into log files. Required</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># to be on for csvlogs and jsonlogs.</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P1"># These are only used if logging_collector is on:</text:p>
+   <text:p text:style-name="P1">log_directory = &apos;/opt/bitnami/postgresql/logs&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># can be absolute or relative to PGDATA</text:p>
+   <text:p text:style-name="P1">log_filename = &apos;postgresql.log&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># can include strftime() escapes</text:p>
+   <text:p text:style-name="P1">#log_file_mode = 0600<text:tab/><text:tab/><text:tab/># creation mode for log files,</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># begin with 0 to use octal notation</text:p>
+   <text:p text:style-name="P1">log_rotation_age = &apos;0&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># happen after that time. <text:s/>0 disables.</text:p>
+   <text:p text:style-name="P1">#log_rotation_size = 10MB<text:tab/><text:tab/># Automatic rotation of logfiles will</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># happen after that much log output.</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 0 disables.</text:p>
+   <text:p text:style-name="P1">#log_truncate_on_rotation = off<text:tab/><text:tab/># If on, an existing log file with the</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># same name as the new log file will be</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># truncated rather than appended to.</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># But such truncation only occurs on</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># time-driven rotation, not on restarts</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># or size-driven rotation. <text:s/>Default is</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># off, meaning append to existing files</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># in all cases.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># These are relevant when logging to syslog:</text:p>
+   <text:p text:style-name="P1">#syslog_facility = &apos;LOCAL0&apos;</text:p>
+   <text:p text:style-name="P1">#syslog_ident = &apos;postgres&apos;</text:p>
+   <text:p text:style-name="P1">#syslog_sequence_numbers = on</text:p>
+   <text:p text:style-name="P1">#syslog_split_messages = on</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># This is only relevant when logging to eventlog (Windows):</text:p>
+   <text:p text:style-name="P1"># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#event_source = &apos;PostgreSQL&apos;</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - When to Log -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#log_min_messages = warning<text:tab/><text:tab/># values in order of decreasing detail:</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug5</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug4</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug3</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug2</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug1</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>info</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>notice</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>warning</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>error</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>log</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>fatal</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>panic</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#log_min_error_statement = error<text:tab/># values in order of decreasing detail:</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug5</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug4</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug3</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug2</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug1</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>info</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>notice</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>warning</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>error</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>log</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>fatal</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>panic (effectively off)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#log_min_duration_statement = -1<text:tab/># -1 is disabled, 0 logs all statements</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># and their durations, &gt; 0 logs only</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># statements running at least this number</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># of milliseconds</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#log_min_duration_sample = -1<text:tab/><text:tab/># -1 is disabled, 0 logs a sample of statements</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># and their durations, &gt; 0 logs only a sample of</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># statements running at least this number</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># of milliseconds;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># sample fraction is determined by log_statement_sample_rate</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#log_statement_sample_rate = 1.0<text:tab/># fraction of logged statements exceeding</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># log_min_duration_sample to be logged;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 1.0 logs all such statements, 0.0 never logs</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#log_transaction_sample_rate = 0.0<text:tab/># fraction of transactions whose statements</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># are logged regardless of their duration; 1.0 logs all</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># statements from all transactions, 0.0 never logs</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#log_startup_progress_interval = 10s<text:tab/># Time between progress updates for</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># long-running startup operations.</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># 0 disables the feature, &gt; 0 indicates</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># the interval in milliseconds.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - What to Log -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#debug_print_parse = off</text:p>
+   <text:p text:style-name="P1">#debug_print_rewritten = off</text:p>
+   <text:p text:style-name="P1">#debug_print_plan = off</text:p>
+   <text:p text:style-name="P1">#debug_pretty_print = on</text:p>
+   <text:p text:style-name="P1">#log_autovacuum_min_duration = 10min<text:tab/># log autovacuum activity;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 disables, 0 logs all actions and</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># their durations, &gt; 0 logs only</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># actions running at least this number</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># of milliseconds.</text:p>
+   <text:p text:style-name="P1">#log_checkpoints = on</text:p>
+   <text:p text:style-name="P1">log_connections = on</text:p>
+   <text:p text:style-name="P1">#log_disconnections = off</text:p>
+   <text:p text:style-name="P1">#log_duration = off</text:p>
+   <text:p text:style-name="P1">#log_error_verbosity = default<text:tab/><text:tab/># terse, default, or verbose messages</text:p>
+   <text:p text:style-name="P1">#log_hostname = off</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/>#log_line_prefix = &apos;%m [%p] &apos;<text:tab/><text:tab/># special values:</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%a = application name</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%u = user name</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%d = database name</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%r = remote host and port</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%h = remote host</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%b = backend type</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%p = process ID</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%P = process ID of parallel group leader</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%t = timestamp without milliseconds</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%m = timestamp with milliseconds</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%n = timestamp with milliseconds (as a Unix epoch)</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%Q = query ID (0 if none or not computed)</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%i = command tag</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%e = SQL state</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%c = session ID</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%l = session line number</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%s = session start timestamp</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%v = virtual transaction ID</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%x = transaction ID (0 if none)</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%q = stop here in non-session</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="7"/>processes</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>%% = &apos;%&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># e.g. &apos;&lt;%u%%%d&gt; &apos;</text:p>
+   <text:p text:style-name="P1">#log_lock_waits = off<text:tab/><text:tab/><text:tab/># log lock waits &gt;= deadlock_timeout</text:p>
+   <text:p text:style-name="P1">#log_recovery_conflict_waits = off<text:tab/># log standby recovery conflict waits</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># &gt;= deadlock_timeout</text:p>
+   <text:p text:style-name="P1">#log_parameter_max_length = -1<text:tab/><text:tab/># when logging statements, limit logged</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># bind-parameter values to N bytes;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 means print in full, 0 disables</text:p>
+   <text:p text:style-name="P1">#log_parameter_max_length_on_error = 0<text:tab/># when logging an error, limit logged</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># bind-parameter values to N bytes;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 means print in full, 0 disables</text:p>
+   <text:p text:style-name="P1">#log_statement = &apos;none&apos;<text:tab/><text:tab/><text:tab/># none, ddl, mod, all</text:p>
+   <text:p text:style-name="P1">#log_replication_commands = off</text:p>
+   <text:p text:style-name="P1">#log_temp_files = -1<text:tab/><text:tab/><text:tab/># log temporary files equal or larger</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># than the specified size in kilobytes;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 disables, 0 logs all temp files</text:p>
+   <text:p text:style-name="P1">#log_timezone = &apos;GMT&apos;</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># PROCESS TITLE</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#cluster_name = &apos;&apos;<text:tab/><text:tab/><text:tab/># added to process titles if nonempty</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#update_process_title = on</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># STATISTICS</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/>#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Cumulative Query and Index Statistics -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#track_activities = on</text:p>
+   <text:p text:style-name="P1">#track_activity_query_size = 1024<text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#track_counts = on</text:p>
+   <text:p text:style-name="P1">#track_io_timing = off</text:p>
+   <text:p text:style-name="P1">#track_wal_io_timing = off</text:p>
+   <text:p text:style-name="P1">#track_functions = none<text:tab/><text:tab/><text:tab/># none, pl, all</text:p>
+   <text:p text:style-name="P1">#stats_fetch_consistency = cache</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Monitoring -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#compute_query_id = auto</text:p>
+   <text:p text:style-name="P1">#log_statement_stats = off</text:p>
+   <text:p text:style-name="P1">#log_parser_stats = off</text:p>
+   <text:p text:style-name="P1">#log_planner_stats = off</text:p>
+   <text:p text:style-name="P1">#log_executor_stats = off</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># AUTOVACUUM</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#autovacuum = on<text:tab/><text:tab/><text:tab/># Enable autovacuum subprocess? <text:s/>&apos;on&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># requires track_counts to also be on.</text:p>
+   <text:p text:style-name="P1">#autovacuum_max_workers = 3<text:tab/><text:tab/># max number of autovacuum subprocesses</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#autovacuum_naptime = 1min<text:tab/><text:tab/># time between autovacuum runs</text:p>
+   <text:p text:style-name="P1">#autovacuum_vacuum_threshold = 50<text:tab/># min number of row updates before</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># vacuum</text:p>
+   <text:p text:style-name="P1">#autovacuum_vacuum_insert_threshold = 1000<text:tab/># min number of row inserts</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># before vacuum; -1 disables insert</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># vacuums</text:p>
+   <text:p text:style-name="P1">#autovacuum_analyze_threshold = 50<text:tab/># min number of row updates before</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># analyze</text:p>
+   <text:p text:style-name="P1">#autovacuum_vacuum_scale_factor = 0.2<text:tab/># fraction of table size before vacuum</text:p>
+   <text:p text:style-name="P1">#autovacuum_vacuum_insert_scale_factor = 0.2<text:tab/># fraction of inserts over table</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># size before insert vacuum</text:p>
+   <text:p text:style-name="P1">#autovacuum_analyze_scale_factor = 0.1<text:tab/># fraction of table size before analyze</text:p>
+   <text:p text:style-name="P1">#autovacuum_freeze_max_age = 200000000<text:tab/># maximum XID age before forced vacuum</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#autovacuum_multixact_freeze_max_age = 400000000<text:tab/># maximum multixact age</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># before forced vacuum</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#autovacuum_vacuum_cost_delay = 2ms<text:tab/># default vacuum cost delay for</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># autovacuum, in milliseconds;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># -1 means use vacuum_cost_delay</text:p>
+   <text:p text:style-name="P1">#autovacuum_vacuum_cost_limit = -1<text:tab/># default vacuum cost limit for</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># autovacuum, -1 means use</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># vacuum_cost_limit</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># CLIENT CONNECTION DEFAULTS</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Statement Behavior -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">client_min_messages = &apos;error&apos;</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug5</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug4</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug3</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug2</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>debug1</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>log</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>notice</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>warning</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>error</text:p>
+   <text:p text:style-name="P1">#search_path = &apos;&quot;$user&quot;, public&apos;<text:tab/># schema names</text:p>
+   <text:p text:style-name="P1">#row_security = on</text:p>
+   <text:p text:style-name="P1">#default_table_access_method = &apos;heap&apos;</text:p>
+   <text:p text:style-name="P1">#default_tablespace = &apos;&apos;<text:tab/><text:tab/># a tablespace name, &apos;&apos; uses the default</text:p>
+   <text:p text:style-name="P1">#default_toast_compression = &apos;pglz&apos;<text:tab/># &apos;pglz&apos; or &apos;lz4&apos;</text:p>
+   <text:p text:style-name="P1">#temp_tablespaces = &apos;&apos;<text:tab/><text:tab/><text:tab/># a list of tablespace names, &apos;&apos; uses</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># only default tablespace</text:p>
+   <text:p text:style-name="P1">#check_function_bodies = on</text:p>
+   <text:p text:style-name="P1">#default_transaction_isolation = &apos;read committed&apos;</text:p>
+   <text:p text:style-name="P1">#default_transaction_read_only = off</text:p>
+   <text:p text:style-name="P1">#default_transaction_deferrable = off</text:p>
+   <text:p text:style-name="P1">#session_replication_role = &apos;origin&apos;</text:p>
+   <text:p text:style-name="P1">#statement_timeout = 0<text:tab/><text:tab/><text:tab/># in milliseconds, 0 is disabled</text:p>
+   <text:p text:style-name="P1">#lock_timeout = 0<text:tab/><text:tab/><text:tab/># in milliseconds, 0 is disabled</text:p>
+   <text:p text:style-name="P1">#idle_in_transaction_session_timeout = 0<text:tab/># in milliseconds, 0 is disabled</text:p>
+   <text:p text:style-name="P1">#idle_session_timeout = 0<text:tab/><text:tab/># in milliseconds, 0 is disabled</text:p>
+   <text:p text:style-name="P1">#vacuum_freeze_table_age = 150000000</text:p>
+   <text:p text:style-name="P1">#vacuum_freeze_min_age = 50000000</text:p>
+   <text:p text:style-name="P1">#vacuum_failsafe_age = 1600000000</text:p>
+   <text:p text:style-name="P1">#vacuum_multixact_freeze_table_age = 150000000</text:p>
+   <text:p text:style-name="P1">#vacuum_multixact_freeze_min_age = 5000000</text:p>
+   <text:p text:style-name="P1">#vacuum_multixact_failsafe_age = 1600000000</text:p>
+   <text:p text:style-name="P1">#bytea_output = &apos;hex&apos;<text:tab/><text:tab/><text:tab/># hex, escape</text:p>
+   <text:p text:style-name="P1">#xmlbinary = &apos;base64&apos;</text:p>
+   <text:p text:style-name="P1">#xmloption = &apos;content&apos;</text:p>
+   <text:p text:style-name="P1">#gin_pending_list_limit = 4MB</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Locale and Formatting -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#datestyle = &apos;iso, mdy&apos;</text:p>
+   <text:p text:style-name="P1">#intervalstyle = &apos;postgres&apos;</text:p>
+   <text:p text:style-name="P1">#timezone = &apos;GMT&apos;</text:p>
+   <text:p text:style-name="P1">#timezone_abbreviations = &apos;Default&apos; <text:s text:c="4"/># Select the set of available time zone</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># abbreviations. <text:s/>Currently, there are</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>Default</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>Australia (historical usage)</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s text:c="2"/>India</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># You can create your own file in</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># share/timezonesets/.</text:p>
+   <text:p text:style-name="P1">#extra_float_digits = 1<text:tab/><text:tab/><text:tab/># min -15, max 3; any value &gt;0 actually</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># selects precise output mode</text:p>
+   <text:p text:style-name="P1">#client_encoding = sql_ascii<text:tab/><text:tab/># actually, defaults to database</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># encoding</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># These settings are initialized by initdb, but they can be changed.</text:p>
+   <text:p text:style-name="P1">#lc_messages = &apos;C&apos;<text:tab/><text:tab/><text:tab/># locale for system error message</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># strings</text:p>
+   <text:p text:style-name="P1">#lc_monetary = &apos;C&apos;<text:tab/><text:tab/><text:tab/># locale for monetary formatting</text:p>
+   <text:p text:style-name="P1">#lc_numeric = &apos;C&apos;<text:tab/><text:tab/><text:tab/># locale for number formatting</text:p>
+   <text:p text:style-name="P1">#lc_time = &apos;C&apos;<text:tab/><text:tab/><text:tab/><text:tab/># locale for time formatting</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># default configuration for text search</text:p>
+   <text:p text:style-name="P1">#default_text_search_config = &apos;pg_catalog.simple&apos;</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Shared Library Preloading -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#local_preload_libraries = &apos;&apos;</text:p>
+   <text:p text:style-name="P1">#session_preload_libraries = &apos;&apos;</text:p>
+   <text:p text:style-name="P1">shared_preload_libraries = &apos;pgaudit&apos;</text:p>
+   <text:p text:style-name="P1">#jit_provider = &apos;llvmjit&apos;<text:tab/><text:tab/># JIT library to use</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Other Defaults -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#dynamic_library_path = &apos;$libdir&apos;</text:p>
+   <text:p text:style-name="P1">#gin_fuzzy_search_limit = 0</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># LOCK MANAGEMENT</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#deadlock_timeout = 1s</text:p>
+   <text:p text:style-name="P1">#max_locks_per_transaction = 64<text:tab/><text:tab/># min 10</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#max_pred_locks_per_transaction = 64<text:tab/># min 10</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#max_pred_locks_per_relation = -2<text:tab/># negative values mean</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (max_pred_locks_per_transaction</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># <text:s/>/ -max_pred_locks_per_relation) - 1</text:p>
+   <text:p text:style-name="P1">#max_pred_locks_per_page = 2 <text:s text:c="11"/># min 0</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># VERSION AND PLATFORM COMPATIBILITY</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P1"># - Previous PostgreSQL Versions -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#array_nulls = on</text:p>
+   <text:p text:style-name="P1">#backslash_quote = safe_encoding<text:tab/># on, off, or safe_encoding</text:p>
+   <text:p text:style-name="P1">#escape_string_warning = on</text:p>
+   <text:p text:style-name="P1">#lo_compat_privileges = off</text:p>
+   <text:p text:style-name="P1">#quote_all_identifiers = off</text:p>
+   <text:p text:style-name="P1">#standard_conforming_strings = on</text:p>
+   <text:p text:style-name="P1">#synchronize_seqscans = on</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># - Other Platforms and Clients -</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#transform_null_equals = off</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># ERROR HANDLING</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#exit_on_error = off<text:tab/><text:tab/><text:tab/># terminate session on any error?</text:p>
+   <text:p text:style-name="P1">#restart_after_crash = on<text:tab/><text:tab/># reinitialize after backend crash?</text:p>
+   <text:p text:style-name="P1">#data_sync_retry = off<text:tab/><text:tab/><text:tab/># retry or panic on failure to fsync</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># data?</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># (change requires restart)</text:p>
+   <text:p text:style-name="P1">#recovery_init_sync_method = fsync<text:tab/># fsync, syncfs (Linux 5.8+)</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># CONFIG FILE INCLUDES</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># These options allow settings to be loaded from files other than the</text:p>
+   <text:p text:style-name="P1"># default postgresql.conf. <text:s/>Note that these are directives, not variable</text:p>
+   <text:p text:style-name="P1"># assignments, so they can usefully be given more than once.</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">include_dir = &apos;conf.d&apos;</text:p>
+   <text:p text:style-name="P1">#include_dir = &apos;...&apos;<text:tab/><text:tab/><text:tab/># include files ending in &apos;.conf&apos; from</text:p>
+   <text:p text:style-name="P1"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/># a directory, e.g., &apos;conf.d&apos;</text:p>
+   <text:p text:style-name="P1">#include_if_exists = &apos;...&apos;<text:tab/><text:tab/># include file only if it exists</text:p>
+   <text:p text:style-name="P1">#include = &apos;...&apos;<text:tab/><text:tab/><text:tab/># include file</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"># CUSTOMIZED OPTIONS</text:p>
+   <text:p text:style-name="P1">#------------------------------------------------------------------------------</text:p>
+   <text:p text:style-name="P1"/>
+   <text:p text:style-name="P1"># Add settings for extensions here</text:p>
+   <text:p text:style-name="P1"># Memory settings</text:p>
+   <text:p text:style-name="P1">include = &apos;/opt/bitnami/postgresql/conf/memory.conf&apos;</text:p>
+  </office:text>
+ </office:body>
+</office:document>

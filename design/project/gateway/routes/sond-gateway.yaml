@@ -1,0 +1,284 @@
+#- restConfiguration:
+#   endpointProperty:
+#      - key: headerFilterStrategy
+#        value: "#allowCacheFilterStrategy"
+- rest:
+   path: /
+   get:
+      - path: /
+        produces: text/xml
+        to: direct:index-xml
+      - path: /_static/{camelStaticFileName}
+        to: direct:static
+      - path: /home
+        produces: text/xml
+        to: direct:processHome
+   post:
+      - path: /_session/set-auth-cookie
+        produces: text/plain
+        to: direct:sessionSetAuthCookie
+- route:
+   from:
+      uri: direct:index-xml
+      steps:
+         - setHeader:
+            name: camelStaticFileName
+            constant: index.xml
+         - to: direct:static
+- route:
+   from:
+      uri: direct:static
+      steps:
+         - to: direct:removeAllHeadersWhiteList
+         - to: direct:checkStaticTooManyRequest
+         - to: direct:tryEtagCache
+         - to: direct:tryPathCache
+         - to: direct:proxyPassResource
+- route:
+   from:
+      uri: direct:sessionSetAuthCookie
+      steps:
+         - removeHeaders:
+               pattern: "*"
+               excludePattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress|camelStaticFileName"
+         - to: log:log?showAll=true
+         - to: direct:loadCookies
+         - to: direct:checkStaticTooManyRequest
+         - to: direct:checkCSRFAttack
+         - setHeader:
+              name: Set-Cookie
+              simple: "auth=${header.auth};Path=/;Domain={{sond.app.domain}};Max-Age=3600;Secure;Httponly;SameOrigin=Lax"
+         - setHeader:
+              name: CamelHttpResponseCode
+              constant: 201
+         - setBody:
+              constant: ""
+         - removeHeaders:
+               pattern: "auth|cookie|csrfCookie"
+- route:
+   from:
+      uri: direct:processHome
+      steps:
+         - to: direct:removeAllHeadersWhiteList
+         - to: direct:checkDynamicTooManyRequest
+         - setHeader:
+              name: CamelHttpResponseCode
+              constant: 201
+         - to: sql:classpath:sql/home.sql
+         - setBody:
+            simple: "${body[0][value]}"
+- route:
+   from:
+      uri: direct:removeAllHeadersWhiteList
+      steps:
+         - removeHeaders:
+               pattern: "*"
+               excludePattern: "CamelVertxPlatformHttpRemoteAddress|camelStaticFileName"
+- route:
+   from:
+      uri: direct:loadCookies
+      steps:
+         - setHeader:
+            name: csrfCookie
+            simple: "${bean:getCSRFCookie}"
+- route:
+   from:
+      uri: direct:checkCSRFAttack
+      steps:
+         - choice:
+            when:
+               - expression:
+                  simple:
+                     expression: "${header.csrfCookie} != 'csrf'"
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 400
+                  - setBody:
+                     constant: "CSRF attempt will not be processed: CSRF Cookie not found or not match"
+                  - stop: {}
+- route:
+   from:
+      uri: direct:checkStaticTooManyRequest
+      steps:
+         - doTry:
+            steps:
+               - throttle:
+                  expression:
+                     simple: "{{sond.throttle.static.total.request-per-second}}"
+                  rejectExecution: true
+            doCatch:
+               - exception: org.apache.camel.processor.ThrottlerRejectedExecutionException
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 429
+                  - setBody:
+                     constant: Too Many Total Requests within a second, try again latter
+                  - stop: {}
+         - doTry:
+            steps:
+               - throttle:
+                  expression:
+                     constant: "{{sond.throttle.static.per-remote-ip.request-per-second}}"
+                  rejectExecution: true
+                  correlationExpression:
+                     header: CamelVertxPlatformHttpRemoteAddress
+            doCatch:
+               - exception: org.apache.camel.processor.ThrottlerRejectedExecutionException
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 429
+                  - setBody:
+                     simple: "Too Many Requests By Remote IP: ${header.CamelVertxPlatformHttpRemoteAddress}"
+                  - stop: {}
+- route:
+   from:
+      uri: direct:checkDynamicTooManyRequest
+      steps:
+         - doTry:
+            steps:
+               - throttle:
+                  expression:
+                     simple: "{{sond.throttle.dynamic.total.request-per-second}}"
+                  rejectExecution: true
+            doCatch:
+               - exception: org.apache.camel.processor.ThrottlerRejectedExecutionException
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 429
+                  - setBody:
+                     constant: Too Many Total Requests within a second, try again latter
+                  - stop: {}
+         - doTry:
+            steps:
+               - throttle:
+                  expression:
+                     constant: "{{sond.throttle.dynamic.per-remote-ip.request-per-second}}"
+                  rejectExecution: true
+                  correlationExpression:
+                     header: CamelVertxPlatformHttpRemoteAddress
+            doCatch:
+               - exception: org.apache.camel.processor.ThrottlerRejectedExecutionException
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 429
+                  - setBody:
+                     simple: "Too Many Requests By Remote IP: ${header.CamelVertxPlatformHttpRemoteAddress}"
+                  - stop: {}
+         - doTry:
+            steps:
+               - throttle:
+                  expression:
+                     simple: "{{sond.throttle.dynamic.total.request-per-month}}"
+                  timePeriodMillis: 2592000000
+                  rejectExecution: true
+            doCatch:
+               - exception: org.apache.camel.processor.ThrottlerRejectedExecutionException
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 429
+                  - setBody:
+                     constant: Too Many Total Requests within a month, DDoS suspected
+                  - stop: {}
+- route:
+   from:
+      uri: direct:tryEtagCache
+      steps:
+         - setHeader:
+            name: CamelCaffeineKey
+            simple: ${header.camelStaticFileName}-${header.if-not-match}
+         - to: caffeine-cache://etagcache?action=GET
+         - choice:
+            when:
+               - expression:
+                  simple:
+                     expression: ${header.CamelCaffeineActionHasResult} == 1
+                 steps:
+                    - setHeader:
+                       name: CamelHttpResponseCode
+                       constant: 304
+                    - setBody:
+                       constant: ""
+                    - to: direct:cacheAndSecurityInClient
+                    - stop: {}
+- route:
+   from:
+      uri: direct:tryPathCache
+      steps:
+         - setHeader:
+            name: CamelCaffeineKey
+            constant: ${header.camelStaticFileName}
+         - to: caffeine-cache://pathcache?action=GET
+         - choice:
+            when:
+               - expression:
+                  simple:
+                     expression: ${header.CamelCaffeineActionHasResult} == 1
+                 steps:
+                    - to: direct:cacheAndSecurityInClient
+                    - stop: {}
+- route:
+   from:
+      uri: direct:proxyPassResource
+      steps:
+         - setBody:
+            simple: "resource:{{sond.static.path}}${header.camelStaticFileName}"
+         - setProperty:
+            name: resource
+            simple: ${body}
+         - setHeader:
+            name: CamelCaffeineKey
+            simple: ${header.camelStaticFileName}
+         - to: caffeine-cache://pathcache?action=PUT
+         - setHeader:
+            name: CamelCaffeineKey
+            simple: ${header.camelStaticFileName}-${bean:cacheHash}
+         - setBody:
+            constant: CACHED
+         - to: caffeine-cache://etagcache?action=PUT  
+         - setBody:
+            simple: ${exchangeProperty.resource}
+         - to: direct:cacheAndSecurityInClient
+         - choice:
+            when:
+               - expression:
+                  simple:
+                     expression: "${header.camelStaticFileName} endsWith '.js'"
+                 steps:
+                  - setHeader:
+                     name: Content-Type
+                     simple: "text/javascript"
+            otherwise:
+               steps:
+                  - setHeader:
+                     name: Content-Type
+                     simple: "text/xml"
+- route:
+   from:
+      uri: direct:cacheAndSecurityInClient
+      steps:
+         - setHeader:
+              name: Set-Cookie
+              simple: "csrf=csrf;Path=/;Domain={{sond.app.domain}};Max-Age=3600;Secure;Httponly;SameOrigin=Strict"
+         - choice:
+            when:
+               - expression:
+                  simple:
+                     expression: ${header.if-not-match} != null
+                 steps:
+                    - setHeader:
+                       name: "ETag"
+                       simple: ${header.if-not-match}
+            otherwise:
+               steps:
+                  - setHeader:
+                     name: "ETag"
+                     simple: "\"${bean:cacheHash}\""
+         - setHeader:
+            name: "Cache-Control"
+            simple: "public, max-age=3600"
