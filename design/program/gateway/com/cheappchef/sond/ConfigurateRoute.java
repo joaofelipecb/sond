@@ -1,4 +1,4 @@
-package com.cheappchef.app;
+package com.cheappchef.sond;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.builder.RouteBuilder;

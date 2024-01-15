@@ -1,4 +1,4 @@
-package com.cheappchef.app;
+package com.cheappchef.sond;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

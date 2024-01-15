@@ -1,48 +1,51 @@
-#- restConfiguration:
-#   endpointProperty:
-#      - key: headerFilterStrategy
-#        value: "#allowCacheFilterStrategy"
-- rest:
-   path: /
-   get:
-      - path: /
-        produces: text/xml
-        to: direct:index-xml
-      - path: /_static/{camelStaticFileName}
-        to: direct:static
-      - path: /home
-        produces: text/xml
-        to: direct:processHome
-   post:
-      - path: /_session/set-auth-cookie
-        produces: text/plain
-        to: direct:sessionSetAuthCookie
+- beans:
+  - name: staticHeaderFilter
+    type: org.apache.camel.support.DefaultHeaderFilterStrategy
+    properties:
+      inFilterPattern: "CamelVertxPlatformHttpRemoteAddress|if-not-match|camelStaticFileName"
+      outFilterPattern: "content-type|e-tag|cache-control|set-cookie"
+      filterOnMatch: "false"
+  - name: setAuthCookieHeaderFilter
+    type: org.apache.camel.support.DefaultHeaderFilterStrategy
+    properties:
+      inFilterPattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress"
+      outFilterPattern: "content-type|e-tag|cache-control|set-cookie"
+      filterOnMatch: "false"
 - route:
    from:
-      uri: direct:index-xml
+      uri: platform-http:/
+      parameters:
+         httpMethodRestrict: GET
+         headerFilterStrategy: "#staticHeaderFilter"
       steps:
+         - to: log:log?showAll=true
          - setHeader:
             name: camelStaticFileName
             constant: index.xml
          - to: direct:static
 - route:
    from:
+      uri: platform-http:/_static/{camelStaticFileName}
+      parameters:
+         httpMethodRestrict: GET
+         headerFilterStrategy: "#staticHeaderFilter"
+      steps:
+         - to: direct:static
+- route:
+   from:
       uri: direct:static
       steps:
-         - to: direct:removeAllHeadersWhiteList
          - to: direct:checkStaticTooManyRequest
          - to: direct:tryEtagCache
          - to: direct:tryPathCache
          - to: direct:proxyPassResource
 - route:
    from:
-      uri: direct:sessionSetAuthCookie
+      uri: platform-http:/_session/set-auth-cookie
+      parameters:
+         httpMethodRestrict: POST
+         headerFilterStrategy: "#setAuthCookieHeaderFilter"
       steps:
-         - removeHeaders:
-               pattern: "*"
-               excludePattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress|camelStaticFileName"
-         - to: log:log?showAll=true
-         - to: direct:loadCookies
          - to: direct:checkStaticTooManyRequest
          - to: direct:checkCSRFAttack
          - setHeader:
@@ -57,39 +60,13 @@
                pattern: "auth|cookie|csrfCookie"
 - route:
    from:
-      uri: direct:processHome
-      steps:
-         - to: direct:removeAllHeadersWhiteList
-         - to: direct:checkDynamicTooManyRequest
-         - setHeader:
-              name: CamelHttpResponseCode
-              constant: 201
-         - to: sql:classpath:sql/home.sql
-         - setBody:
-            simple: "${body[0][value]}"
-- route:
-   from:
-      uri: direct:removeAllHeadersWhiteList
-      steps:
-         - removeHeaders:
-               pattern: "*"
-               excludePattern: "CamelVertxPlatformHttpRemoteAddress|camelStaticFileName"
-- route:
-   from:
-      uri: direct:loadCookies
-      steps:
-         - setHeader:
-            name: csrfCookie
-            simple: "${bean:getCSRFCookie}"
-- route:
-   from:
       uri: direct:checkCSRFAttack
       steps:
          - choice:
             when:
                - expression:
                   simple:
-                     expression: "${header.csrfCookie} != 'csrf'"
+                     expression: "${bean:getCSRFCookie} != 'csrf'"
                  steps:
                   - setHeader:
                      name: CamelHttpResponseCode
