@@ -18,7 +18,6 @@ public class ConfigurateRoute extends RouteBuilder {
 	@Override
 	public void configure() throws Exception {
 		Registry registry = getContext().getRegistry();
-	    registry.bind("allowCacheFilterStrategy", new AllowCacheHeaderFilterStrategy());
 	    registry.bind("cacheHash", new CacheHash());
 	    registry.bind("getCSRFCookie", new GetCSRFCookie());
 	}

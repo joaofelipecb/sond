@@ -2,14 +2,20 @@
   - name: staticHeaderFilter
     type: org.apache.camel.support.DefaultHeaderFilterStrategy
     properties:
-      inFilterPattern: "CamelVertxPlatformHttpRemoteAddress|if-not-match|camelStaticFileName"
-      outFilterPattern: "content-type|e-tag|cache-control|set-cookie"
+      inFilterPattern: "CamelVertxPlatformHttpRemoteAddress|If-Not-Match|camelStaticFileName"
+      outFilterPattern: "Content-Type|ETag|Cache-Control|Set-Cookie|Location"
+      filterOnMatch: "false"
+  - name: dynamicHeaderFilter
+    type: org.apache.camel.support.DefaultHeaderFilterStrategy
+    properties:
+      inFilterPattern: "CamelVertxPlatformHttpRemoteAddress"
+      outFilterPattern: "Content-Type|Set-Cookie"
       filterOnMatch: "false"
   - name: setAuthCookieHeaderFilter
     type: org.apache.camel.support.DefaultHeaderFilterStrategy
     properties:
       inFilterPattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress"
-      outFilterPattern: "content-type|e-tag|cache-control|set-cookie"
+      outFilterPattern: "Content-Type|ETag|Cache-Control|Set-Cookie|Location"
       filterOnMatch: "false"
 - route:
    from:
@@ -18,7 +24,6 @@
          httpMethodRestrict: GET
          headerFilterStrategy: "#staticHeaderFilter"
       steps:
-         - to: log:log?showAll=true
          - setHeader:
             name: camelStaticFileName
             constant: index.xml
