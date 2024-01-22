@@ -1,0 +1,5 @@
+.*
+!.gitignore
+**/*.class
+management/organization/artifact/**/*.*
+management/organization/security/**/*.*

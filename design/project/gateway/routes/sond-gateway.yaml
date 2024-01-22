@@ -17,6 +17,10 @@
       inFilterPattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress"
       outFilterPattern: "Content-Type|ETag|Cache-Control|Set-Cookie|Location"
       filterOnMatch: "false"
+  - name: getCSRFCookie
+    type: com.cheappchef.sond.GetCSRFCookie
+  - name: cacheHash
+    type: com.cheappchef.sond.CacheHash
 - route:
    from:
       uri: platform-http:/
