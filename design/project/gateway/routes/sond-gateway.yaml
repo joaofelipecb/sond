@@ -54,8 +54,12 @@
               constant: 201
          - setBody:
               constant: ""
-         - removeHeaders:
-               pattern: "auth|cookie|csrfCookie"
+         - setHeader:
+            name: Location
+            simple: "/home"
+         - setHeader:
+            name: CamelHttpResponseCode
+            constant: 302
 - route:
    from:
       uri: direct:checkCSRFAttack
