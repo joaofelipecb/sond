@@ -23,17 +23,6 @@
     type: com.cheappchef.sond.CacheHash
 - route:
    from:
-      uri: platform-http:/
-      parameters:
-         httpMethodRestrict: GET
-         headerFilterStrategy: "#staticHeaderFilter"
-      steps:
-         - setHeader:
-            name: camelStaticFileName
-            constant: index.xml
-         - to: direct:static
-- route:
-   from:
       uri: platform-http:/_static/{camelStaticFileName}
       parameters:
          httpMethodRestrict: GET
@@ -230,20 +219,6 @@
          - setBody:
             simple: ${exchangeProperty.resource}
          - to: direct:cacheAndSecurityInClient
-         - choice:
-            when:
-               - expression:
-                  simple:
-                     expression: "${header.camelStaticFileName} endsWith '.js'"
-                 steps:
-                  - setHeader:
-                     name: Content-Type
-                     simple: "text/javascript"
-            otherwise:
-               steps:
-                  - setHeader:
-                     name: Content-Type
-                     simple: "text/xml"
 - route:
    from:
       uri: direct:cacheAndSecurityInClient
@@ -268,3 +243,24 @@
          - setHeader:
             name: "Cache-Control"
             simple: "public, max-age=3600"
+         - choice:
+            when:
+               - expression:
+                  simple:
+                     expression: "${header.camelStaticFileName} endsWith '.js'"
+                 steps:
+                  - setHeader:
+                     name: Content-Type
+                     simple: "text/javascript"
+               - expression:
+                  simple:
+                     expression: "${header.camelStaticFileName} endsWith '.html'"
+                 steps:
+                  - setHeader:
+                     name: Content-Type
+                     simple: "text/html"
+            otherwise:
+               steps:
+                  - setHeader:
+                     name: Content-Type
+                     simple: "text/xml"
