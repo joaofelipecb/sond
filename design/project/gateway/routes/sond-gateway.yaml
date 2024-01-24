@@ -30,15 +30,41 @@
          httpMethodRestrict: GET
          headerFilterStrategy: "#staticHeaderFilter"
       steps:
-         - to: direct:static
+         - to: direct:sondStatic
 - route:
    from:
-      uri: direct:static
+      uri: direct:sondStatic
       steps:
          - to: direct:checkStaticTooManyRequest
          - to: direct:tryEtagCache
          - to: direct:tryPathCache
          - to: direct:proxyPassResource
+- route:
+   from:
+      uri: platform-http:/{sondDynamicURI}
+      parameters:
+         httpMethodRestrict: GET
+         headerFilterStrategy: "#dynamicHeaderFilter"
+      steps:
+         - to: direct:sondDynamic
+- route:
+   from:
+      uri: direct:sondDynamic
+      steps:
+         - doTry:
+            steps:
+            - to: bean:validateFirebaseAuthToken
+            - to: direct:checkDynamicTooManyRequest
+            - to: direct:dynamic
+            doCatch:
+               - exception: java.lang.Exception
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 500
+                  - setBody:
+                     constant: "There was an error"
+                  - stop: {}
 - route:
    from:
       uri: platform-http:/_session/set-auth-cookie
@@ -165,6 +191,23 @@
                      constant: 429
                   - setBody:
                      constant: Too Many Total Requests within a month, DDoS suspected
+                  - stop: {}
+         - doTry:
+            steps:
+               - throttle:
+                  expression:
+                     simple: "{{sond.throttle.dynamic.per-user.request-per-second}}"
+                  rejectExecution: true
+                  correlationExpression:
+                     header: auth_user_id
+            doCatch:
+               - exception: org.apache.camel.processor.ThrottlerRejectedExecutionException
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 429
+                  - setBody:
+                     constant: Too Many Per User Requests within a second
                   - stop: {}
 - route:
    from:
