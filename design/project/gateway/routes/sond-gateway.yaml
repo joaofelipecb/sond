@@ -8,7 +8,7 @@
   - name: dynamicHeaderFilter
     type: org.apache.camel.support.DefaultHeaderFilterStrategy
     properties:
-      inFilterPattern: "CamelVertxPlatformHttpRemoteAddress"
+      inFilterPattern: "CamelVertxPlatformHttpRemoteAddress|auth|cookie"
       outFilterPattern: "Content-Type|Set-Cookie"
       filterOnMatch: "false"
   - name: setAuthCookieHeaderFilter
@@ -21,6 +21,8 @@
     type: com.cheappchef.sond.GetCSRFCookie
   - name: cacheHash
     type: com.cheappchef.sond.CacheHash
+  - name: validateFirebaseAuthToken
+    type: com.cheappchef.sond.ValidateFirebaseAuthToken
 - route:
    from:
       uri: platform-http:/_static/{camelStaticFileName}
