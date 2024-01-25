@@ -1,21 +1,9 @@
 - beans:
-  - name: staticHeaderFilter
+  - name: sondHeaderFilter
     type: org.apache.camel.support.DefaultHeaderFilterStrategy
     properties:
-      inFilterPattern: "CamelVertxPlatformHttpRemoteAddress|If-Not-Match|camelStaticFileName"
-      outFilterPattern: "Content-Type|ETag|Cache-Control|Set-Cookie|Location"
-      filterOnMatch: "false"
-  - name: dynamicHeaderFilter
-    type: org.apache.camel.support.DefaultHeaderFilterStrategy
-    properties:
-      inFilterPattern: "CamelVertxPlatformHttpRemoteAddress|auth|cookie"
-      outFilterPattern: "Content-Type|Set-Cookie"
-      filterOnMatch: "false"
-  - name: setAuthCookieHeaderFilter
-    type: org.apache.camel.support.DefaultHeaderFilterStrategy
-    properties:
-      inFilterPattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress"
-      outFilterPattern: "Content-Type|ETag|Cache-Control|Set-Cookie|Location"
+      inFilterPattern: ".*"
+      outFilterPattern: "Content-Type|ETag|Set-Cookie|Location|Cache-Control"
       filterOnMatch: "false"
   - name: getCSRFCookie
     type: com.cheappchef.sond.GetCSRFCookie
@@ -25,12 +13,43 @@
     type: com.cheappchef.sond.ValidateFirebaseAuthToken
 - route:
    from:
-      uri: platform-http:/_static/{camelStaticFileName}
+      uri: "platform-http:/*"
       parameters:
          httpMethodRestrict: GET
-         headerFilterStrategy: "#staticHeaderFilter"
+         headerFilterStrategy: "#sondHeaderFilter"
       steps:
-         - to: direct:sondStatic
+      - choice:
+         when:
+         - simple: "${header.CamelHttpUri} == '/'"
+           steps:
+            - setHeader:
+               name: camelStaticFileName
+               simple: "{{sond.static.index.file}}"
+            - to: direct:sondStatic
+         - simple: "${header.CamelHttpPath} startsWith '/_static/'"
+           steps:
+            - setHeader:
+               name: camelStaticFileName
+               simple: "${header.CamelHttpPath.replaceAll('/_static/(.*)','$1')}"
+            - to: direct:sondStatic
+         otherwise:
+           steps:
+            - to: direct:sondDynamicGet
+- route:
+   from:
+      uri: "platform-http:/*"
+      parameters:
+         httpMethodRestrict: POST
+         headerFilterStrategy: "#sondHeaderFilter"
+      steps:
+      - choice:
+         when:
+         - simple: "${header.CamelHttpUri} == '/_session/set-auth-cookie'"
+           steps:
+            - to: direct:sond-set-auth-cookie
+         otherwise:
+           steps:
+            - to: direct:sondDynamicPost
 - route:
    from:
       uri: direct:sondStatic
@@ -41,36 +60,7 @@
          - to: direct:proxyPassResource
 - route:
    from:
-      uri: platform-http:/{sondDynamicURI}
-      parameters:
-         httpMethodRestrict: GET
-         headerFilterStrategy: "#dynamicHeaderFilter"
-      steps:
-         - to: direct:sondDynamic
-- route:
-   from:
-      uri: direct:sondDynamic
-      steps:
-         - doTry:
-            steps:
-            - to: bean:validateFirebaseAuthToken
-            - to: direct:checkDynamicTooManyRequest
-            - to: direct:dynamic
-            doCatch:
-               - exception: java.lang.Exception
-                 steps:
-                  - setHeader:
-                     name: CamelHttpResponseCode
-                     constant: 500
-                  - setBody:
-                     constant: "There was an error"
-                  - stop: {}
-- route:
-   from:
-      uri: platform-http:/_session/set-auth-cookie
-      parameters:
-         httpMethodRestrict: POST
-         headerFilterStrategy: "#setAuthCookieHeaderFilter"
+      uri: direct:sond-set-auth-cookie
       steps:
          - to: direct:checkStaticTooManyRequest
          - to: direct:checkCSRFAttack
@@ -88,6 +78,44 @@
          - setHeader:
             name: CamelHttpResponseCode
             constant: 302
+- route:
+   from:
+      uri: direct:sondDynamicGet
+      steps:
+         - doTry:
+            steps:
+            - to: bean:validateFirebaseAuthToken
+            - to: direct:checkDynamicTooManyRequest
+            - to: direct:dynamicGet
+            doCatch:
+               - exception: java.lang.Exception
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 500
+                  - setBody:
+                     constant: "There was an error"
+                  - stop: {}
+
+- route:
+   from:
+      uri: direct:sondDynamicPost
+      steps:
+         - doTry:
+            steps:
+            - to: direct:checkCSRFAttack
+            - to: bean:validateFirebaseAuthToken
+            - to: direct:checkDynamicTooManyRequest
+            - to: direct:dynamicPost
+            doCatch:
+               - exception: java.lang.Exception
+                 steps:
+                  - setHeader:
+                     name: CamelHttpResponseCode
+                     constant: 500
+                  - setBody:
+                     constant: "There was an error"
+                  - stop: {}
 - route:
    from:
       uri: direct:checkCSRFAttack
