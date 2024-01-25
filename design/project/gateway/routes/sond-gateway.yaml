@@ -22,16 +22,22 @@
          when:
          - simple: "${header.CamelHttpUri} == '/'"
            steps:
-            - setHeader:
+           - removeHeaders:
+               pattern: "*"
+               excludePattern: "CamelHttpPath|CamelVertxPlatformHttpRemoteAddress"
+           - setHeader:
                name: camelStaticFileName
                simple: "{{sond.static.index.file}}"
-            - to: direct:sondStatic
+           - to: direct:sondStatic
          - simple: "${header.CamelHttpPath} startsWith '/_static/'"
            steps:
-            - setHeader:
+           - removeHeaders:
+               pattern: "*"
+               excludePattern: "CamelHttpPath|CamelVertxPlatformHttpRemoteAddress"
+           - setHeader:
                name: camelStaticFileName
                simple: "${header.CamelHttpPath.replaceAll('/_static/(.*)','$1')}"
-            - to: direct:sondStatic
+           - to: direct:sondStatic
          otherwise:
            steps:
             - to: direct:sondDynamicGet
@@ -46,6 +52,9 @@
          when:
          - simple: "${header.CamelHttpUri} == '/_session/set-auth-cookie'"
            steps:
+            - removeHeaders:
+               pattern: "*"
+               excludePattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress"
             - to: direct:sond-set-auth-cookie
          otherwise:
            steps:
@@ -65,13 +74,13 @@
          - to: direct:checkStaticTooManyRequest
          - to: direct:checkCSRFAttack
          - setHeader:
-              name: Set-Cookie
-              simple: "auth=${header.auth};Path=/;Domain={{sond.app.domain}};Max-Age=3600;Secure;Httponly;SameOrigin=Lax"
+            name: Set-Cookie
+            simple: "auth=${header.auth};Path=/;Domain={{sond.app.domain}};Max-Age=3600;Secure;Httponly;SameSite=Lax"
          - setHeader:
-              name: CamelHttpResponseCode
-              constant: 201
+            name: CamelHttpResponseCode
+            constant: 201
          - setBody:
-              constant: ""
+            constant: ""
          - setHeader:
             name: Location
             simple: "/home"
@@ -302,7 +311,7 @@
       steps:
          - setHeader:
               name: Set-Cookie
-              simple: "csrf=csrf;Path=/;Domain={{sond.app.domain}};Max-Age=3600;Secure;Httponly;SameOrigin=Strict"
+              simple: "csrf=csrf;Path=/;Domain={{sond.app.domain}};Max-Age=3600;Secure;Httponly;SameSite=Strict"
          - choice:
             when:
                - expression:
