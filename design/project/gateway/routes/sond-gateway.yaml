@@ -22,21 +22,21 @@
          when:
          - simple: "${header.CamelHttpUri} == '/'"
            steps:
+           - setProperty:
+               name: sondStaticFileName
+               simple: "{{sond.static.index.file}}"
            - removeHeaders:
                pattern: "*"
                excludePattern: "CamelHttpPath|CamelVertxPlatformHttpRemoteAddress"
-           - setHeader:
-               name: camelStaticFileName
-               simple: "{{sond.static.index.file}}"
            - to: direct:sondStatic
          - simple: "${header.CamelHttpPath} startsWith '/_static/'"
            steps:
+           - setProperty:
+               name: sondStaticFileName
+               simple: "${header.CamelHttpPath.replaceAll('/_static/(.*)','$1')}"
            - removeHeaders:
                pattern: "*"
                excludePattern: "CamelHttpPath|CamelVertxPlatformHttpRemoteAddress"
-           - setHeader:
-               name: camelStaticFileName
-               simple: "${header.CamelHttpPath.replaceAll('/_static/(.*)','$1')}"
            - to: direct:sondStatic
          otherwise:
            steps:
@@ -83,7 +83,7 @@
             constant: ""
          - setHeader:
             name: Location
-            simple: "/home"
+            constant: "/home"
          - setHeader:
             name: CamelHttpResponseCode
             constant: 302
@@ -233,6 +233,9 @@
                   - stop: {}
          - doTry:
             steps:
+               - setHeader:
+                  name: sondFirebaseAuthUserId
+                  simple: "${exchangeProperty.sondFirebaseAuthUserId}"
                - throttle:
                   expression:
                      simple: "{{sond.throttle.dynamic.per-user.request-per-second}}"
@@ -248,13 +251,17 @@
                   - setBody:
                      constant: Too Many Per User Requests within a second
                   - stop: {}
+            doFinally:
+               steps:
+               - removeHeader:
+                  name: sondFirebaseAuthUserId
 - route:
    from:
       uri: direct:tryEtagCache
       steps:
          - setHeader:
             name: CamelCaffeineKey
-            simple: ${header.camelStaticFileName}-${header.if-not-match}
+            simple: "${exchangeProperty.sondStaticFileName}-${header.if-not-match}"
          - to: caffeine-cache://etagcache?action=GET
          - choice:
             when:
@@ -275,7 +282,7 @@
       steps:
          - setHeader:
             name: CamelCaffeineKey
-            constant: ${header.camelStaticFileName}
+            constant: "${exchangeProperty.sondStaticFileName}"
          - to: caffeine-cache://pathcache?action=GET
          - choice:
             when:
@@ -290,22 +297,24 @@
       uri: direct:proxyPassResource
       steps:
          - setBody:
-            simple: "resource:{{sond.static.path}}${header.camelStaticFileName}"
+            simple: "resource:{{sond.static.path}}${exchangeProperty.sondStaticFileName}"
          - setProperty:
             name: resource
             simple: ${body}
          - setHeader:
             name: CamelCaffeineKey
-            simple: ${header.camelStaticFileName}
+            simple: ${exchangeProperty.sondStaticFileName}
          - to: caffeine-cache://pathcache?action=PUT
          - setHeader:
             name: CamelCaffeineKey
-            simple: ${header.camelStaticFileName}-${bean:cacheHash}
+            simple: ${exchangeProperty.sondStaticFileName}-${bean:cacheHash}
          - setBody:
             constant: CACHED
          - to: caffeine-cache://etagcache?action=PUT  
          - setBody:
             simple: ${exchangeProperty.resource}
+         - removeProperty:
+            name: resource
          - to: direct:cacheAndSecurityInClient
 - route:
    from:
@@ -335,14 +344,14 @@
             when:
                - expression:
                   simple:
-                     expression: "${header.camelStaticFileName} endsWith '.js'"
+                     expression: "${exchangeProperty.sondStaticFileName} endsWith '.js'"
                  steps:
                   - setHeader:
                      name: Content-Type
                      simple: "text/javascript"
                - expression:
                   simple:
-                     expression: "${header.camelStaticFileName} endsWith '.html'"
+                     expression: "${exchangeProperty.sondStaticFileName} endsWith '.html'"
                  steps:
                   - setHeader:
                      name: Content-Type
