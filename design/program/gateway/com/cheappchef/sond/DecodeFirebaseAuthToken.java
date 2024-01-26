@@ -4,7 +4,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.camel.Exchange;
-
 import org.apache.camel.Handler;
 
 import com.google.firebase.FirebaseApp;
@@ -13,7 +12,7 @@ import com.google.firebase.auth.FirebaseToken;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 
-public class ValidateFirebaseAuthToken {
+public class DecodeFirebaseAuthToken  implements FirebaseUtils {
 	
 	private Exchange exchange;
 	
@@ -28,7 +27,7 @@ public class ValidateFirebaseAuthToken {
 		
 		initializeFirebaseAppIfNeeded();
 		
-		copyAllHeaders();
+		exchange.getOut().setHeaders(exchange.getIn().getHeaders());
 		
 		decodeAndValidateAndStoreAuthToken();
 	}
@@ -68,31 +67,9 @@ public class ValidateFirebaseAuthToken {
 		}
 	}
 	
-	public void initializeFirebaseAppIfNeeded() {
-		
-		try {
-			
-			FirebaseApp.getInstance();
-		}
-		catch (IllegalStateException exception) {
-			
-			/*FirebaseOptions options = FirebaseOptions.builder()
-				    .setCredentials(GoogleCredentials.getApplicationDefault())
-				    .setProjectId("<FIREBASE_PROJECT_ID>")
-				    .build();*/
-			
-			FirebaseApp.initializeApp(/*options*/);
-		}
-	}
-	
-	public void copyAllHeaders() {
-		
-		exchange.getOut().setHeaders(exchange.getIn().getHeaders());
-	}
-	
 	public void decodeAndValidateAndStoreAuthToken() throws Exception {
 		
-		FirebaseToken decodedToken = FirebaseAuth.getInstance().verifyIdToken(authCookie);
+		FirebaseToken decodedToken = FirebaseAuth.getInstance().verifySessionCookie(authCookie);
 		
 		String uid = decodedToken.getUid();
 		

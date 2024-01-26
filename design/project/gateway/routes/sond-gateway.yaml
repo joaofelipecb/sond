@@ -9,8 +9,10 @@
     type: com.cheappchef.sond.GetCSRFCookie
   - name: cacheHash
     type: com.cheappchef.sond.CacheHash
-  - name: validateFirebaseAuthToken
-    type: com.cheappchef.sond.ValidateFirebaseAuthToken
+  - name: manageFirebaseAuthCookie
+    type: com.cheappchef.sond.ManageFirebaseAuthCookie
+  - name: decodeFirebaseAuthToken
+    type: com.cheappchef.sond.DecodeFirebaseAuthToken
 - route:
    from:
       uri: "platform-http:/*"
@@ -73,14 +75,12 @@
       steps:
          - to: direct:checkStaticTooManyRequest
          - to: direct:checkCSRFAttack
+         - to: bean:manageFirebaseAuthCookie
          - setHeader:
             name: Set-Cookie
-            simple: "auth=${header.auth};Path=/;Domain={{sond.app.domain}};Max-Age=3600;Secure;Httponly;SameSite=Lax"
-         - setHeader:
-            name: CamelHttpResponseCode
-            constant: 201
-         - setBody:
-            constant: ""
+            simple: "auth=${exchangeProperty.sessionCookie};Path=/;Domain={{sond.app.domain}};Max-Age=86400;Secure;Httponly;SameSite=Lax"
+         - removeProperty:
+            name: sessionCookie
          - setHeader:
             name: Location
             constant: "/home"
@@ -93,7 +93,7 @@
       steps:
          - doTry:
             steps:
-            - to: bean:validateFirebaseAuthToken
+            - to: bean:decodeFirebaseAuthToken
             - to: direct:checkDynamicTooManyRequest
             - to: direct:dynamicGet
             doCatch:
@@ -106,7 +106,6 @@
                      constant: "There was an error"
                   - log: "${exception.message} ${exception.stacktrace}"
                   - stop: {}
-
 - route:
    from:
       uri: direct:sondDynamicPost
@@ -114,7 +113,7 @@
          - doTry:
             steps:
             - to: direct:checkCSRFAttack
-            - to: bean:validateFirebaseAuthToken
+            - to: bean:decodeFirebaseAuthToken
             - to: direct:checkDynamicTooManyRequest
             - to: direct:dynamicPost
             doCatch:
