@@ -96,6 +96,6 @@ public class ValidateFirebaseAuthToken {
 		
 		String uid = decodedToken.getUid();
 		
-		exchange.getOut().setHeader("auth_user_id", uid);		
+		exchange.getOut().setHeader("sondFirebaseAuthUserId", uid);		
 	}
 }

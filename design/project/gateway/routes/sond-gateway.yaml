@@ -104,6 +104,7 @@
                      constant: 500
                   - setBody:
                      constant: "There was an error"
+                  - log: "${exception.message} ${exception.stacktrace}"
                   - stop: {}
 
 - route:
@@ -124,6 +125,7 @@
                      constant: 500
                   - setBody:
                      constant: "There was an error"
+                  - log: "${exception.message} ${exception.stacktrace}"
                   - stop: {}
 - route:
    from:
@@ -236,7 +238,7 @@
                      simple: "{{sond.throttle.dynamic.per-user.request-per-second}}"
                   rejectExecution: true
                   correlationExpression:
-                     header: auth_user_id
+                     header: sondFirebaseAuthUserId
             doCatch:
                - exception: org.apache.camel.processor.ThrottlerRejectedExecutionException
                  steps:
