@@ -5,8 +5,8 @@
       inFilterPattern: ".*"
       outFilterPattern: "Content-Type|ETag|Set-Cookie|Location|Cache-Control"
       filterOnMatch: "false"
-  - name: getCSRFCookie
-    type: com.cheappchef.sond.GetCSRFCookie
+  - name: checkCSRFCookie
+    type: com.cheappchef.sond.CheckCSRFCookie
   - name: cacheHash
     type: com.cheappchef.sond.CacheHash
   - name: manageFirebaseAuthCookie
@@ -120,12 +120,12 @@
             doCatch:
                - exception: java.lang.Exception
                  steps:
+                  - log: "${exception.message} ${exception.stacktrace}"
                   - setHeader:
                      name: CamelHttpResponseCode
                      constant: 500
                   - setBody:
-                     constant: "There was an error"
-                  - log: "${exception.message} ${exception.stacktrace}"
+                     simple: "resource:classpath:static/error.xml"
                   - stop: {}
 - route:
    from:
@@ -140,28 +140,30 @@
             doCatch:
                - exception: java.lang.Exception
                  steps:
+                  - log: "${exception.message} ${exception.stacktrace}"
                   - setHeader:
                      name: CamelHttpResponseCode
                      constant: 500
                   - setBody:
-                     constant: "There was an error"
-                  - log: "${exception.message} ${exception.stacktrace}"
+                     simple: "resource:classpath:static/error.xml"
                   - stop: {}
 - route:
    from:
       uri: direct:checkCSRFAttack
       steps:
-         - choice:
-            when:
-               - expression:
-                  simple:
-                     expression: "${bean:getCSRFCookie} != 'csrf'"
+         - doTry:
+            steps:
+            - to:
+               uri: bean:checkCSRFCookie
+            doCatch:
+               - exception: java.lang.Exception
                  steps:
+                  - log: "${exception.message} ${exception.stacktrace}"
                   - setHeader:
                      name: CamelHttpResponseCode
-                     constant: 400
+                     constant: 500
                   - setBody:
-                     constant: "CSRF attempt will not be processed: CSRF Cookie not found or not match"
+                     simple: "resource:classpath:static/error.xml"
                   - stop: {}
 - route:
    from:
