@@ -58,6 +58,12 @@
                pattern: "*"
                excludePattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress"
             - to: direct:sond-set-auth-cookie
+         - simple: "${header.CamelHttpUri} == '/_session/unset-auth-cookie'"
+           steps:
+            - removeHeaders:
+               pattern: "*"
+               excludePattern: "auth|cookie|CamelVertxPlatformHttpRemoteAddress"
+            - to: direct:sond-unset-auth-cookie
          otherwise:
            steps:
             - to: direct:sondDynamicPost
@@ -84,6 +90,21 @@
          - setHeader:
             name: Location
             constant: "/home"
+         - setHeader:
+            name: CamelHttpResponseCode
+            constant: 302
+- route:
+   from:
+      uri: direct:sond-unset-auth-cookie
+      steps:
+         - to: direct:checkStaticTooManyRequest
+         - to: direct:checkCSRFAttack
+         - setHeader:
+            name: Set-Cookie
+            simple: "auth=deleted;Path=/;Domain={{sond.app.domain}};Max-Age=0;Secure;Httponly;SameSite=Lax"
+         - setHeader:
+            name: Location
+            constant: "/"
          - setHeader:
             name: CamelHttpResponseCode
             constant: 302
